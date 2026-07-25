@@ -1,19 +1,21 @@
 # 📊 Page Pulse
 
-Page Pulse is a Flask-based web application that performs a quick website audit. It analyzes a webpage and displays important SEO and performance metrics in a clean, user-friendly dashboard.
+Page Pulse is a Flask-based website auditing application that analyzes webpages and provides important SEO and performance insights through a simple and responsive dashboard.
+
+The application helps users quickly understand webpage information such as response speed, HTML structure, and basic SEO elements.
 
 ---
 
 ## ✨ Features
 
-- 🌐 HTTP Status Code
-- ⚡ Response Time
-- 📄 Page Title
-- 📝 Meta Description
-- 🏷️ H1 Tag Count
-- 🖼️ Image Count
-- 📚 Word Count
-- ❌ Invalid URL Handling
+- 🌐 HTTP Status Code Analysis
+- ⚡ Website Response Time Measurement
+- 📄 Page Title Extraction
+- 📝 Meta Description Detection
+- 🏷️ H1 Tag Count Analysis
+- 🖼️ Image Count Detection
+- 📚 Word Count Calculation
+- ❌ Invalid URL Error Handling
 - 📱 Responsive User Interface
 
 ---
@@ -74,13 +76,13 @@ py -m venv venv
 
 ### 4. Activate the virtual environment
 
-**Windows**
+Windows:
 
 ```bash
 venv\Scripts\activate
 ```
 
-### 5. Install the dependencies
+### 5. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -92,7 +94,7 @@ pip install -r requirements.txt
 py app.py
 ```
 
-Open your browser and visit:
+Open your browser:
 
 ```
 http://127.0.0.1:5000
@@ -102,18 +104,16 @@ http://127.0.0.1:5000
 
 ## 🧪 Running Tests
 
-Run the test suite using:
+Run tests using:
 
 ```bash
 py -m pytest
 ```
 
-Example Output:
+Successful output:
 
 ```text
-=========================
-2 passed
-=========================
+5 passed in 1.00s
 ```
 
 ---
@@ -122,10 +122,12 @@ Example Output:
 
 The application allows users to:
 
-- Enter any website URL
-- Perform a website audit
+- Enter a website URL
+- Perform an automated website audit
 - View SEO and performance metrics
-- Handle invalid URLs with proper error messages
+- Receive clear error messages for invalid URLs
+
+(Add your screenshot here)
 
 ---
 
@@ -133,7 +135,8 @@ The application allows users to:
 
 **Preetha Devi**
 
-GitHub: https://github.com/PreethaDevi28
+GitHub:
+https://github.com/PreethaDevi28
 
 ---
 
