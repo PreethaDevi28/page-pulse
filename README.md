@@ -35,7 +35,7 @@ Page Pulse is a Flask-based web application that performs a quick website audit 
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/page-pulse.git
+git clone https://github.com/PreethaDevi28/page-pulse.git
 ```
 
 Move into the project folder:
