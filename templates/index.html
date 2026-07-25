@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Page Pulse | Website Audit Tool</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-circle circle1"></div>
+    <div class="bg-circle circle2"></div>
+    <div class="bg-circle circle3"></div>
+
+    <!-- Navbar -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span>Page Pulse</span>
+
+        </div>
+
+        <nav>
+
+            <a href="#">Home</a>
+
+            <a href="#features">Features</a>
+
+            <a href="#result">Results</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Hero -->
+
+    <section class="hero">
+
+        <h1>
+
+            Website <span>SEO Audit</span>
+
+        </h1>
+
+        <p>
+
+            Instantly analyze any website for performance, SEO,
+            response time and page structure.
+
+        </p>
+
+    </section>
+
+    <!-- Search Card -->
+
+    <section class="search-card">
+
+        <div class="input-box">
+
+            <i class="fa-solid fa-globe"></i>
+
+            <input
+                id="url"
+                type="text"
+                placeholder="https://example.com">
+
+        </div>
+
+        <button
+            id="auditBtn"
+            onclick="auditWebsite()">
+
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+            Audit Website
+
+        </button>
+
+    </section>
+
+    <!-- Loader -->
+
+    <div
+        id="loader"
+        class="loader hidden">
+
+        <div class="spinner"></div>
+
+        <p>Scanning website...</p>
+
+    </div>
+
+    <!-- Result -->
+
+    <section
+        id="result"
+        class="result-section">
+
+    </section>
+
+    <!-- Features -->
+
+    <section
+        id="features"
+        class="features">
+
+        <div class="feature">
+
+            <i class="fa-solid fa-gauge-high"></i>
+
+            <h3>Fast Analysis</h3>
+
+            <p>
+                Get complete website insights in just a few seconds.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <h3>SEO Insights</h3>
+
+            <p>
+                Analyze titles, headings, images, metadata and more.
+            </p>
+
+        </div>
+
+        <div class="feature">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            <h3>Reliable</h3>
+
+            <p>
+                Smart error handling for invalid or unreachable websites.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Page Pulse
+
+        </p>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
